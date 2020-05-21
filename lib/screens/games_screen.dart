@@ -5,12 +5,14 @@ import 'package:plagui/tile/game_tile.dart';
 class GameScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var game = 0xff392850;
     return Scaffold(
-      backgroundColor: Color(0xff392850),
+      appBar: AppBar(backgroundColor: Color(0xff392850), elevation: 0.0),
+      backgroundColor: Color(game),
       body: Column(
         children: <Widget>[
           SizedBox(
-            height: 110,
+            height: 20,
           ),
           Padding(
             padding: EdgeInsets.only(left: 16, right: 16),
@@ -26,9 +28,6 @@ class GameScreen extends StatelessWidget {
                               color: Colors.white,
                               fontSize: 40,
                               fontWeight: FontWeight.bold)),
-                    ),
-                    SizedBox(
-                      height: 4,
                     ),
                   ],
                 ),
