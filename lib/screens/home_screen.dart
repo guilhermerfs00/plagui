@@ -11,9 +11,8 @@ class HomeScreen extends StatelessWidget {
         width: double.infinity,
         decoration: BoxDecoration(
             gradient: LinearGradient(begin: Alignment.topCenter, colors: [
-          Colors.purple[900],
+          Color(0xff392850),
           Colors.purple[800],
-          Colors.purple[400],
         ])),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -80,9 +79,9 @@ class HomeScreen extends StatelessWidget {
                                         offset: Offset(0, 10))
                                   ]),
                             )),
-                        _gameButtom("Posições", PositionScreen, context),
-                        _gameButtom("Regras", PositionScreen, context),
-                        _gameButtom("Jogos", PositionScreen, context),
+                        _gameButtom("Posições", PositionScreen, context, '/position'),
+                        _gameButtom("Regras", PositionScreen, context, '/position'),
+                        _gameButtom("Jogos", PositionScreen, context, '/game'),
                       ],
                     ),
                   ),
@@ -95,18 +94,18 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget _gameButtom(text, screen, context) {
+  Widget _gameButtom(text, screen, context, route) {
     return Column(
       children: <Widget>[
         InkWell(
-          onTap: ()  => Navigator.of(context).pushNamed('/position'),
+          onTap: ()  => Navigator.of(context).pushNamed(route),
           child: FadeAnimation(
               1.6,
               Container(
                 height: 55,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: Colors.purple[700]),
+                    color: Colors.purple[900]),
                 child: Center(
                   child: Text(
                     text,

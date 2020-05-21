@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:plagui/games/sueca_game_screen.dart';
+import 'package:plagui/screens/games_screen.dart';
 import 'package:plagui/screens/home_screen.dart';
 import 'package:plagui/screens/position_screen.dart';
 
@@ -18,6 +20,8 @@ class MyApp extends StatelessWidget {
       home: HomeScreen(),
       routes: <String, WidgetBuilder>{
         '/position': (BuildContext context) => new PositionScreen(),
+        '/game': (BuildContext context) => new GameScreen(),
+        '/sueca': (BuildContext context) => new SuecaScreen(),
       },
     );
   }
