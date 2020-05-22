@@ -40,7 +40,7 @@ class _PositionTileState extends State<PositionTile> {
             Padding(
                 padding: EdgeInsets.all(16.0),
                 child: Container(
-                  height: 300,
+                  height: 220,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: <Widget>[

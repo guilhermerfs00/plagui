@@ -5,9 +5,9 @@ class GridDashboard extends StatelessWidget {
   
   Items item1 = new Items(title: "Sueca", subtitle: "", event: "/sueca");
   Items item2 = new Items(title: "Eu nunca", subtitle: "", event: "/euNunca");
-  Items item3 = new Items(title: "Patinho", subtitle: "", event: "/patinho");
+  Items item3 = new Items(title: "Pi", subtitle: "", event: "/pi");
   Items item4 = new Items(title: "Africa", subtitle: "", event: "/africa");
-  Items item5 = new Items(title: "Pí", subtitle: "", event: "/pi");
+  Items item5 = new Items(title: "Patinho", subtitle: "", event: "/patinho");
   Items item6 = new Items(title: "Só beber", subtitle: "", event: "/beber");
 
   @override

@@ -33,7 +33,7 @@ class _PiGameState extends State<PiGame> {
                       ),
                       Center(
                         child: FutureBuilder(
-                            future: DefaultAssetBundle.of(context).loadString('assets/games.json'),
+                            future: DefaultAssetBundle.of(context).loadString('assets/pi.json'),
                             builder: (context, snapshot) {
                               if (!snapshot.hasData) {
                                 return Center(
@@ -57,7 +57,7 @@ class _PiGameState extends State<PiGame> {
                         ),
                       ),
                       SizedBox(
-                        height: 250,
+                        height: 150,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
