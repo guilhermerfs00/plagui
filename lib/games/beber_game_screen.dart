@@ -239,7 +239,7 @@ class RouletteScore extends StatelessWidget {
     4: 'Quem girou bebe',
     5: 'O da direita bebe',
     6: 'O da esquerda bebe',
-    7: 'Nimguem bebe',
+    7: 'Ninguem bebe',
     8: 'Escolha alguem para beber',
   };
 
